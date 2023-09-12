@@ -1,0 +1,308 @@
+<!-- contact.html (Contact Page) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Hotel | Contact</title>
+    <link rel="shortcut icon" href="./images/logo1.svg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding-top: 100px;
+            background-color: #fce4ec;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f06292;
+            padding: 40px;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        }
+
+        h1 {
+            color: white;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        section.contact {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #fce4ec;
+        }
+
+        button[type="submit"] {
+            background-color: #fce4ec;
+            color: black;
+            padding: 20px 40px;
+            border: 1px solid #fce4ec;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #893a5a;
+        }
+
+        footer {
+            background-color: #f06292;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            padding: 0px 400px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .side {
+            display: flex;
+            flex-direction: column;
+        }
+
+        fieldset {
+            border: 5px solid #fce4ec;
+        }
+
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #f06292;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 50px black;
+        }
+
+        textarea {
+            background-color: #fce4ec;
+            width: 98%;
+            color:black;
+            padding: 10px;
+            margin: 0px 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            font-size: 18px;
+            height: 100px;
+        }
+
+        input::placeholder {
+            color: black;
+        }
+
+        ::placeholder {
+            color:black;
+        }
+        legend{
+            font-size: 18px;
+            color: #fce4ec;
+        }
+        .rope{
+            display: flex;
+            justify-content: center;
+            margin: 0px 0px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo2.svg" width="60px" alt="logo">
+            <div class="side">
+                <h1>The Pink Hotel</h1>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="Hotel home.html">Home</a></li>
+                <li><a href="Hotel about.html">About</a></li>
+                <li><a href="Hotel contact.html">Contact</a></li>
+                <li><a href="Hotel gallery.html">Gallery</a></li>
+                <li><a href="Hotel book now.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <section class="container">
+            <h2>Contact Us</h2>
+            <fieldset>
+                <legend>Your Information is Safe with Us</legend>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="name" id="name" name="name" placeholder="Enter your name Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example101@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone number">Phone Number</label>
+                    <input type="phone number" id="phone number" name="phone number" placeholder="09000000000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role"> Which option describes your Role</label>
+                    <select id="role" name="role" required>
+                        <option value="1">Student</option>
+                        <option value="2">Academic Staffs</option>
+                        <option value="3">Non-Academic staff</option>
+                        <option value="4">Parents/Guardians</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="complaint type">Which option describes your Complaint Type</label>
+                    <select id="complaint type" name="complaint type" required>
+                        <option value="1">Academic</option>
+                        <option value="2">Non-Academic</option>
+                        <option value="3">Security</option>
+                        <option value="4">Hostel</option>
+                        <option value="5">Kitchen</option>
+                        <option value="6">Others</option>
+                    </select>
+                </div>
+                <br>
+                <div class="text">
+                    <label for="details of Message">Details of Message</label>
+                    <textarea placeholder="Write about your Comments" id="details of Message" name="details of Message"
+                        rows="4" required class="new"></textarea>
+                </div>
+                <div class="rope">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="mailto:contact@michealayim32@gmail.com"><img src="./icons/gmail-svgrepo-com (1).svg" alt="Gmail"
+                    width="70px"></a>
+            <a href="http://instagram.com/ekoreshowo/"><img src="./icons/instagram-167-svgrepo-com.svg" alt="Instagram"
+                    width="50px" class="one"></a>
+            <a href="http://wa.me/+2349057358200"><img src="./icons/whatsapp-svgrepo-com.svg" alt="WhatsApp"
+                    width="60px"></a>
+
+        </div>
+
+        <p>&copy; 2023 Pink Hotel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // script.js
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add event listener to the contact form submission
+            var contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent form submission
+
+                // Get form data
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+
+                // Perform form validation
+                if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+                // Display success message
+                alert('Thank you for contacting us! We will get back to you shortly.');
+
+                // Reset form fields
+                contactForm.reset();
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

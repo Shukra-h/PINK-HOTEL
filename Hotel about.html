@@ -1,0 +1,269 @@
+<!-- about.html (About Page) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Hotel | About</title>
+    <link rel="shortcut icon" href="./images/logo1.svg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding-top: 120px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f06292;
+            padding: 40px;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        section.about {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+
+            font-size: 24px;
+            margin-bottom: 10px
+        }
+
+        footer {
+            background-color: #f06292;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .side {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+        }
+
+        .review .box-container .box {
+            text-align: center;
+            padding: 2rem;
+            border: 1rem solid #fff;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+            border-radius: .5rem;
+            flex: 1 1 30rem;
+            height: 50%;
+            width: 50%;
+            background: #fce4ec;
+            margin-top: 5rem;
+        }
+
+        .review .box-container .box img {
+            height: 12rem;
+            width: 12rem;
+            border-radius: 50%;
+            border: 1rem solid #fff;
+            margin-top: -8rem;
+            object-fit: cover;
+        }
+
+
+        .review .box-container .box h3 {
+            font-size: 2.5rem;
+            color: black;
+            padding: 0.5rem 0;
+        }
+
+        .review .box-container .box .stars i {
+            font-size: 2.5rem;
+            color: var(--red);
+            padding: 0.5rem 0;
+        }
+
+        .review .box-container .box p {
+            font-size: 1.7rem;
+            color: black;
+            padding: 1rem 0;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        .rating {
+            display: inline-block;
+        }
+
+        .star {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("./icons/star\ full.svg");
+            background-size: cover;
+        }
+
+        .moon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("./icons/star\ not.svg");
+            background-size: cover;
+        }
+        .icons{
+            display: flex;
+            justify-content: space-around;
+            padding: 0px 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo2.svg" width="60px" alt="logo">
+            <div class="side">
+                <h1>The Pink Hotel</h1>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="Hotel home.html">Home</a></li>
+                <li><a href="Hotel about.html">About</a></li>
+                <li><a href="Hotel contact.html">Contact</a></li>
+                <li><a href="Hotel gallery.html">Gallery</a></li>
+                <li><a href="Hotel book now.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Pink Hotel</h2>
+            <p>Welcome to Pink Hotel, where luxury meets elegance. Located in the heart of a vibrant city, our hotel
+                offers
+                a perfect blend of comfort and style. From our well-appointed rooms to our exceptional dining options,
+                we
+                strive to provide an unforgettable experience for our guests.</p>
+        </section>
+
+        <section class="review" id="review">
+
+            <h1 class="heading">Customer Reviews</h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="./images/pic 3.png" alt="Reviews">
+                    <h3>Micheal Smith</h3>
+                    <div class="rating">
+                        <span class="star">1</span>
+                        <span class="star">2</span>
+                        <span class="star">3</span>
+                        <span class="star">4</span>
+                        <span class="moon"></span>
+                    </div>
+
+                    <p>One of the highlights of my stay was the exceptional dining experience. The hotel's
+                        restaurant offered a delectable array of dishes, beautifully presented and bursting with
+                        flavors. From the sumptuous breakfast buffet to the exquisite dinner options, every meal was
+                        a delightful culinary journey. The talented chefs truly showcased their expertise.</p>
+                </div>
+                <div class="box">
+                    <img src="./images/pic spa.jpeg" alt="Reviews">
+                    <h3>Justin beiber</h3>
+                    <div class="stars">
+                        <span class="star">1</span>
+                        <span class="star">2</span>
+                        <span class="star">3</span>
+                        <span class="star">4</span>
+                        <span class="star">5</span>
+                    </div>
+                    <p>The Pink Hotel also provided a range of excellent facilities. The spa and wellness center
+                        offered a serene sanctuary where I indulged in rejuvenating treatments and massages. The
+                        fitness center was well-equipped, allowing me to maintain my workout routine. Additionally,
+                        the hotel's convenient location provided easy access to local attractions and amenities.</p>
+                </div>
+                <div class="box">
+                    <img src="./images/pic1.png" alt="Reviews">
+                    <h3>Cat Valentine</h3>
+                    <div class="stars">
+                        <span class="star">1</span>
+                        <span class="star">2</span>
+                        <span class="star">3</span>
+                        <span class="star">4</span>
+                        <span class="star">5</span>
+                    </div>
+                    <p>What truly sets the Pink Hotel apart is the attention to creating a truly inclusive
+                        experience. The hotel goes above and beyond to cater to guests with disabilities, ensuring
+                        their comfort and accessibility throughout the property. This commitment to inclusivity is
+                        commendable and truly sets the Pink Hotel apart.</p>
+                </div>
+
+
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href="mailto:contact@michealayim32@gmail.com"><img src="./icons/gmail-svgrepo-com (1).svg" alt="Gmail" width="70px"></a>
+            <a href="http://instagram.com/ekoreshowo/"><img src="./icons/instagram-167-svgrepo-com.svg" alt="Instagram"
+                    width="50px" class="one"></a>
+            <a href="http://wa.me/+2349057358200"><img src="./icons/whatsapp-svgrepo-com.svg" alt="WhatsApp"
+                    width="60px"></a>
+
+        </div>
+
+        <p>&copy; 2023 Pink Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

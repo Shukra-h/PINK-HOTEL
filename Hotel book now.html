@@ -1,0 +1,249 @@
+<!-- book.html (Book Now Page) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink Hotel | Book Now</title>
+  <link rel="shortcut icon" href="./images/logo1.svg" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding-top: 150px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f06292;
+      padding: 40px;
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    section.book {
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      align-items: start;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button[type="submit"] {
+      background-color: #e91e63;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #c2185b;
+    }
+
+    footer {
+      background-color: #f06292;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .side {
+      display: flex;
+      flex-direction: column;
+    }
+    .icons{
+            display: flex;
+            justify-content: space-around;
+            padding: 0px 400px;
+        }
+        .book {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #f06292;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px black;
+        }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/logo2.svg" width="60px" alt="logo">
+      <div class="side">
+        <h1>The Pink Hotel</h1>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="Hotel home.html">Home</a></li>
+        <li><a href="Hotel about.html">About</a></li>
+        <li><a href="Hotel contact.html">Contact</a></li>
+        <li><a href="Hotel gallery.html">Gallery</a></li>
+        <li><a href="Hotel book now.html">Book Now</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="book">
+      <h2>Book Now</h2>
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="check-in">Check-in Date</label>
+          <input type="date" id="check-in" name="check-in" required>
+        </div>
+        <div class="form-group">
+          <label for="check-out">Check-out Date</label>
+          <input type="date" id="check-out" name="check-out" required>
+        </div>
+        <div class="form-group">
+          <label for="room-type">Room Type</label>
+          <select id="room-type" name="room-type" required>
+            <option value="">Select Room Type</option>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+          </select>
+        </div>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="icons">
+        <a href="mailto:contact@michealayim32@gmail.com"><img src="./icons/gmail-svgrepo-com (1).svg" alt="Gmail" width="70px"></a>
+        <a href="http://instagram.com/ekoreshowo/"><img src="./icons/instagram-167-svgrepo-com.svg" alt="Instagram"
+                width="50px" class="one"></a>
+        <a href="http://wa.me/+2349057358200"><img src="./icons/whatsapp-svgrepo-com.svg" alt="WhatsApp"
+                width="60px"></a>
+
+    </div>
+
+    <p>&copy; 2023 Pink Hotel. All rights reserved.</p>
+</footer>
+
+
+  <script>
+    // script.js
+    document.addEventListener('DOMContentLoaded', function () {
+      // Add event listener to the booking form submission
+      var bookingForm = document.getElementById('booking-form');
+      bookingForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent form submission
+
+        // Get form data
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var checkInDate = document.getElementById('check-in').value;
+        var checkOutDate = document.getElementById('check-out').value;
+        var roomType = document.getElementById('room-type').value;
+
+        // Perform form validation
+        if (name.trim() === '' || email.trim() === '' || checkInDate === '' || checkOutDate === '' || roomType === '') {
+          alert('Please fill in all fields.');
+          return;
+        }
+
+        // Display success message
+        var successMessage = 'Thank you, ' + name + '! Your booking has been confirmed.\n\n' +
+          'Booking Details:\n' +
+          'Name: ' + name + '\n' +
+          'Email: ' + email + '\n' +
+          'Check-in Date: ' + checkInDate + '\n' +
+          'Check-out Date: ' + checkOutDate + '\n' +
+          'Room Type: ' + roomType;
+
+        alert(successMessage);
+
+        // Reset form fields
+        bookingForm.reset();
+      });
+    });
+
+  </script>
+</body>
+
+</html>
